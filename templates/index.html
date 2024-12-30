@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI APIs</title>
+</head>
+
+<body>
+    <h1>Img2Anime</h1>
+    <form action="/img2anime" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" value="2">
+            <option value="0">Basic</option>
+            <option value="1">3D</option>
+            <option value="2">Anime</option>
+            <option value="3">Enhance</option>
+            <option value="4">Fantasy Art</option>
+            <option value="5">Water Color</option>
+        </select> <br> <br>
+        <input type="file" name="picture"> <br> <br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength" placeholder="0.1 to 1" step="0.01" min="0.1" max="1" value="0.2"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <h1>Img2Avatar</h1>
+    <form action="/img2avatar" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" value="4">
+            <option value="0">Basic</option>
+            <option value="1">3D</option>
+            <option value="2">Anime</option>
+            <option value="3">Enhance</option>
+            <option value="4">Fantasy Art</option>
+            <option value="5">Water Color</option>
+        </select> <br> <br>
+        <input type="file" name="picture"> <br> <br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength" placeholder="0.1 to 1" step="0.01" min="0.1" max="1" value="0.35"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+    <br>
+    <h1>Img2Cartoon</h1>
+    <form action="/img2cartoon" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" value="4">
+            <option value="0">Basic</option>
+            <option value="1">3D</option>
+            <option value="2">Anime</option>
+            <option value="3">Enhance</option>
+            <option value="4">Fantasy Art</option>
+            <option value="5">Water Color</option>
+        </select> <br> <br>
+        <input type="file" name="picture"> <br> <br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength" placeholder="0.1 to 1" step="0.01" min="0.1" max="1" value="0.25"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <br>
+    <h1>Disney Character</h1>
+    <form action="/img2disney" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="style">Choose Style:</label>
+        <select id="style" name="style" value="4">
+            <option value="0">Basic</option>
+            <option value="1">3D</option>
+            <option value="2">Anime</option>
+            <option value="3">Enhance</option>
+            <option value="4">Fantasy Art</option>
+            <option value="5">Water Color</option>
+        </select> <br> <br>
+        <input type="file" name="picture"> <br> <br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength" placeholder="0.1 to 1" step="0.01" min="0.1" max="1" value="0.3"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Swap your Face</h1>
+    <form action="/face_swap" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="target">Upload Target Image</label>
+        <input type="file" name="target"> <br> <br>
+        <label for="target">Upload Face Image</label>
+        <input type="file" name="face"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Enhance your Images</h1>
+    <form action="/imgenhance" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="target">Upload Target Image</label>
+        <input type="file" name="picture"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+    <br>
+    <hr>
+    <br>
+
+    <h1>Deoldify (Colorize Black and White Photos)</h1>
+    <form action="/deoldify" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="Add your key here"> <br> <br>
+        <label for="picture">Upload Black and White Image:</label>
+        <input type="file" name="picture" id="picture"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+
+
+
+    <hr>
+    <br>
+
+    <h1>Object Removal</h1>
+    <form action="/lamacleaner" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="add your key here"> <br> <br>
+        <label for="picture">Upload Target Image</label>
+        <input type="file" name="picture"> <br> <br>
+        <label for="mask">Mask Image:</label>
+        <input type="file" name="mask"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+
+    <h1>Aging</h1>
+    <form action="/aging" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="Add your key here"> <br> <br>
+        <label for="image">Upload Target Image:</label>
+        <input type="file" name="image"> <br> <br>
+        <label for="gender">Gender:</label>
+        <input type="text" name="gender" placeholder="Enter gender"> <br> <br>
+        <label for="strength">Strength:</label>
+        <input type="number" name="strength" placeholder="0.1 to 1" step="0.01" min="0.1" max="1" value="0.4"> <br> <br>
+        <input type="submit"> <br> <br>
+    </form>
+
+    <h1>Illusion</h1>
+    <form action="/illusion" method="post" enctype="multipart/form-data">
+        <input type="text" name="key" placeholder="Enter your key here"> <br> <br>
+    
+        <label for="prompt">Prompt:</label>
+        <input type="text" name="prompt" placeholder="Enter prompt here"> <br> <br>
+    
+        <label for="enable_selection">Enable Selection:</label>
+        <select id="enable_selection" name="enable_selection">
+            <option value="0">No</option>
+            <option value="1">Yes</option>
+        </select> <br> <br>
+    
+        <label for="user_selection">User Selection:</label>
+        <select id="user_selection" name="user_selection">
+            <option value="">Select an Option</option>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+            <option value="4">Option 4</option>
+            <option value="5">Option 5</option>
+            <option value="6">Option 6</option>
+            <option value="7">Option 7</option>
+        </select> <br> <br>
+    
+        <input type="file" name="image"> <br> <br>
+    
+        <input type="submit"> <br> <br>
+    </form>
+    
+</body>
+
+</html>
